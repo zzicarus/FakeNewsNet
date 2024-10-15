@@ -63,7 +63,7 @@ The `config.json` can be used to configure and collect only certain parts of the
 	 - **news_articles** : This option downloads the news articles for the dataset.  
      - **tweets** : This option downloads tweets objects posted sharing the news in Twitter. This makes use of Twitter API to download tweets.  
      - **retweets**: This option allows to download the retweets of the tweets provided in the dataset.  
-     - **user_profile**: This option allows to download the user profile information of the users involved in tweets. To download user profiles, tweet objects need to be downloaded first in order to identify users involved in tweets.  
+     - **user_profile**: This option allows to download the user profile information of the users involved in tweets. 
      - **user_timeline_tweets**: This option allows to download upto 200 recent tweets from the user timeline. To download user's recent tweets, tweet objects needs to be downloaded first in order to identify users involved in tweets.
      - **user_followers**: This option allows to download the user followers ids of the users involved in tweets. To download user followers ids, tweet objects need to be downloaded first in order to identify users involved in tweets.  
      - **user_following**: This option allows to download the user following ids of the users involved in tweets. To download user's following ids, tweet objects needs to be downloaded first in order to identify users involved in tweets.
@@ -72,7 +72,7 @@ The `config.json` can be used to configure and collect only certain parts of the
 ## Running Code
 
 Inorder to collect data set fast, code makes user of process parallelism and to synchronize twitter key limitations across mutiple python processes, a lightweight flask application is used as keys management server.
-Execute the following commands inside `code` folder,
+Execute the following commands inside `code` folder,To download user profiles, tweet objects need to be downloaded first in order to identify users involved in tweets.  
 
     nohup python -m resource_server.app &> keys_server.out&
 
